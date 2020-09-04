@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block title %} Remove Password {% endblock %}
+
+{% block content %}
+<form action="#" method="post" autocomplete="off">
+    <p style="text-align:center;font-family:helvetica;font-size:40px;color:white;">Remove Password</p>
+    <p style="text-align:center;color:white;">Site:</p>
+    <p style="text-align:center;"><input type='text' name='site'/></p>
+    <p style="text-align:center;color:white;">Username:</p>
+    <p style="text-align:center;"><input type='text' name='uname'/></p>
+    <p style="text-align:center;"><input type='submit' value='Submit' style="width:125px;height: 25px;"/></p>
+    <p> &emsp; &emsp; &emsp; </p>
+</form>
+<table style="border:1px solid white; margin-left:auto;margin-right:auto;">
+  <tr>
+    <th> &emsp; &emsp; &emsp; </th>
+    <th style = "font-family: helvetica;font-size:30px; font-weight: normal; text-align:center; color: white;">Site Name</th>
+    <th> &emsp; &emsp; &emsp;&emsp; &emsp; &emsp;</th>
+    <th style = "font-family:helvetica;font-size:30px; font-weight: normal; text-align:center;color: white;">Username</th>
+    <th> &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;</th>
+    <th style = "font-family:helvetica;font-size:30px; font-weight: normal; text-align:center;color: white;">Password</th>
+    <th> &emsp; &emsp; &emsp; </th>
+  </tr>
+  <tr>
+    <th>&emsp; &emsp; &emsp;</th>
+    <th>&emsp; &emsp; &emsp;</th>
+    <th>&emsp; &emsp; &emsp;</th>
+  </tr>
+  {%for x in l%}
+  <tr>
+    <th> &emsp; &emsp; &emsp; </th>
+    <th style = "font-family: helvetica;font-size:30px; font-weight: normal; text-align:center; color: white;">{{x[0]}}</th>
+    <th> &emsp; &emsp; &emsp;&emsp; &emsp; &emsp;</th>
+    <th style = "font-family:helvetica;font-size:30px; font-weight: normal; text-align:center;color: white;">{{x[1]}}</th>
+    <th> &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;</th>
+    <th style = "font-family:helvetica;font-size:30px; font-weight: normal; text-align:center;color: white;">{{x[2]}}</th>
+    <th> &emsp; &emsp; &emsp; </th>
+  </tr>
+  {% endfor %}
+</table>
+{% endblock %}

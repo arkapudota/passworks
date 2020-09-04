@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block title %}Home Page{% endblock %}
+{% block content %}
+
+<form action="#" method="post">
+  <p>&emsp;</p>
+
+<p style="text-align: center;color:rgba(0, 0, 0, 0);"><input type='submit' name='submit_button' value='Add/Gen Password' style="width:400px;height: 75px; font-size: 20px; background-color: rgba(32,32,32); border: 5px solid white; color: white; "/></p>
+<p>&emsp;</p>
+<p style="text-align: center;color:rgba(0, 0, 0, 0);"><input type='submit' name='submit_button' value='Remove Password' style="width:400px;height: 75px; font-size: 20px; background-color: rgba(32,32,32); border: 5px solid white; color: white; " /></p>
+<p>&emsp;</p>
+<p style="text-align: center;color:rgba(0, 0, 0, 0);"><input type='submit' name='submit_button' value='Search' style="width:400px;height: 75px; font-size: 20px; background-color: rgba(32,32,32); border: 5px solid white; color: white; " /></p>
+<p>&emsp;</p>
+    
+
+</form>
+<body style="background-color: black;">
+<table style="border:1px solid white; margin-left:auto;margin-right:auto;">
+    <tr>
+      <th> &emsp; &emsp; &emsp; </th>
+      <th style = "font-family: helvetica;font-size:30px; font-weight: normal; text-align:center; color: white;">Site Name</th>
+      <th> &emsp; &emsp; &emsp;&emsp; &emsp; &emsp;</th>
+      <th style = "font-family:helvetica;font-size:30px; font-weight: normal; text-align:center;color: white;">Username</th>
+      <th> &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;</th>
+      <th style = "font-family:helvetica;font-size:30px; font-weight: normal; text-align:center;color: white;">Password</th>
+      <th> &emsp; &emsp; &emsp; </th>
+    </tr>
+    <tr>
+      <th>&emsp; &emsp; &emsp;</th>
+      <th>&emsp; &emsp; &emsp;</th>
+      <th>&emsp; &emsp; &emsp;</th>
+    </tr>
+    {%for x in l%}
+    <tr>
+      <th> &emsp; &emsp; &emsp; </th>
+      <th style = "font-family: helvetica;font-size:30px; font-weight: normal; text-align:center; color: white;">{{x[0]}}</th>
+      <th> &emsp; &emsp; &emsp;&emsp; &emsp; &emsp;</th>
+      <th style = "font-family:helvetica;font-size:30px; font-weight: normal; text-align:center;color: white;">{{x[1]}}</th>
+      <th> &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;</th>
+      <th style = "font-family:helvetica;font-size:30px; font-weight: normal; text-align:center;color: white;">{{x[2]}}</th>
+      <th> &emsp; &emsp; &emsp; </th>
+    </tr>
+    {% endfor %}
+  </table>
+  </body>
+{% endblock %}

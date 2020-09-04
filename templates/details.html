@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %} Add Password {% endblock %}
+
+{% block content %}
+<form action="#" method="post" autocomplete="off">
+    <p style="text-align:center;font-family:helvetica;font-size:40px;color:white;">Add Password</p>
+    <p style="text-align:center;color:white;">Site:</p>
+    <p style="text-align:center;"><input type='text' name='site'/></p>
+    <p style="text-align:center;color:white;">Username:</p>
+    <p style="text-align:center;"><input type='text' name='uname'/></p>
+    <p style="text-align:center;color:white;">Password:</p> 
+    <p style="text-align:center;"><input type='text' name='password'/></p>
+    <p style="text-align:center;"><input type='submit' name='submit_button' value='Add' style="width:125px;height: 25px;"/></p>
+    <p style="text-align:center;"><input type='submit' name='submit_button' value='Generate' style="width:125px;height: 25px;"/></p>
+    <p style="text-align:center;"><input type='submit' name='submit_button' value='Home' style="width:125px;height: 25px;"></p>
+
+
+</form>
+{% endblock %}
