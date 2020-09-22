@@ -3,16 +3,25 @@
 {% block content %}
 <p>&emsp;</p>
 <p>&emsp;</p>
-<table style="border:1px solid white; margin-left:auto;margin-right:auto;">
+<head>
+  <style>
+    table,
+    td,
+    th {
+      padding: 10px;
+      border: 2px solid white;
+      border-radius: 5px;
+      background-color: rgba(32,32,32);
+      text-align: center;
+    }
+  </style>
+</head>
+<table style="border:2px solid white; margin-left:auto;margin-right:auto; align-content: center; align-self: center; ">
     {%for x in l%}
     <tr>
-      <th> &emsp; &emsp; &emsp; </th>
       <th style = "font-family:helvetica;font-size:30px; font-weight: normal; text-align:center; color: white;">{{x[0]}}</th>
-      <th> &emsp; &emsp; &emsp;&emsp; &emsp; &emsp;</th>
       <th style = "font-family:helvetica;font-size:30px; font-weight: normal; text-align:center;color: white;">{{x[1]}}</th>
-      <th> &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;</th>
       <th style = "font-family:helvetica;font-size:30px; font-weight: normal; text-align:center;color: white;">{{x[2]}}</th>
-      <th> &emsp; &emsp; &emsp; </th>
     </tr>
     {% endfor %}
   </table>
