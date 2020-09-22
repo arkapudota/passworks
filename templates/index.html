@@ -14,31 +14,31 @@
     
 
 </form>
+<head>
+  <style>
+    table,
+    td,
+    th {
+      padding: 10px;
+      border: 2px solid white;
+      border-radius: 5px;
+      background-color: rgba(32,32,32);
+      text-align: center;
+    }
+  </style>
+</head>
 <body style="background-color: black;">
-<table style="border:1px solid white; margin-left:auto;margin-right:auto;">
+<table style=style="border:2px solid black; margin-left:auto;margin-right:auto; align='center' ">
     <tr>
-      <th> &emsp; &emsp; &emsp; </th>
       <th style = "font-family: helvetica;font-size:30px; font-weight: normal; text-align:center; color: white;">Site Name</th>
-      <th> &emsp; &emsp; &emsp;&emsp; &emsp; &emsp;</th>
       <th style = "font-family:helvetica;font-size:30px; font-weight: normal; text-align:center;color: white;">Username</th>
-      <th> &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;</th>
       <th style = "font-family:helvetica;font-size:30px; font-weight: normal; text-align:center;color: white;">Password</th>
-      <th> &emsp; &emsp; &emsp; </th>
-    </tr>
-    <tr>
-      <th>&emsp; &emsp; &emsp;</th>
-      <th>&emsp; &emsp; &emsp;</th>
-      <th>&emsp; &emsp; &emsp;</th>
     </tr>
     {%for x in l%}
     <tr>
-      <th> &emsp; &emsp; &emsp; </th>
       <th style = "font-family: helvetica;font-size:30px; font-weight: normal; text-align:center; color: white;">{{x[0]}}</th>
-      <th> &emsp; &emsp; &emsp;&emsp; &emsp; &emsp;</th>
       <th style = "font-family:helvetica;font-size:30px; font-weight: normal; text-align:center;color: white;">{{x[1]}}</th>
-      <th> &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;</th>
       <th style = "font-family:helvetica;font-size:30px; font-weight: normal; text-align:center;color: white;">{{x[2]}}</th>
-      <th> &emsp; &emsp; &emsp; </th>
     </tr>
     {% endfor %}
   </table>
